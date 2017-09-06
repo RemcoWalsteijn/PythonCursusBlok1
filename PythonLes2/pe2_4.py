@@ -1,3 +1,4 @@
-uurloon = float(input('Wat verdien je per uur?: '))
-aantal_uur = float(input('Hoeveel uur heb je gewerkt?: '))
-print ('%d uur werken levert %d Euro op' % (aantal_uur, aantal_uur*uurloon))
+uurloon = (float(input('Wat verdien je per uur?: ')))
+aantal_uur = (int(input('Hoeveel uur heb je gewerkt?: ')))
+salaris = uurloon * aantal_uur
+print ((str(aantal_uur)) + ' uur werken levert €' + (str(salaris)) + ' Euro op')
