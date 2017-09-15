@@ -1,4 +1,5 @@
 def standaardprijs(afstandKM):
+    ''''De standaardprijs wordt berekent aan de hand van het aantal KM. Wanneer er 0KM wordt gereisd is de standaardprijs 0'''
     if afstandKM > 50.0:
         totaalbedrag = 15 + (afstandKM * 0.6)
         return(totaalbedrag)
@@ -11,6 +12,7 @@ def standaardprijs(afstandKM):
         return(totaalbedrag)
 
 def ritprijs(leeftijd, weekendrit, afstandKM):
+    ''''De ritprijs wordt berekend aan de hand van de functie standaardprijs. Er wordt rekening gehouden met 3 meegegeven parameters'''
     standaardkostenKM = standaardprijs(afstandKM)
 
     if weekendrit == True:
