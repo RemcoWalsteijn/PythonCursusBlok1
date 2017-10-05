@@ -1,5 +1,4 @@
 string = input('Geef een string van vier letters: ')
-lengte = len(string)
 
 while len(string) != 4:
     print(string, 'heeft', len(string), 'letters')

@@ -11,7 +11,7 @@ def gemiddelde_per_student(studentencijfers):
 
 def gemiddelde_van_alle_studenten(studentencijfers):
     allecijfers = list(chain.from_iterable(studentencijfers))
-    totalecijfer = (sum(allecijfers) / len(studentencijfers))
+    totalecijfer = sum(allecijfers) / len(studentencijfers)
     return(totalecijfer)
 
 print(gemiddelde_per_student(studentencijfers))

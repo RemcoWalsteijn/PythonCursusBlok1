@@ -1,5 +1,5 @@
 getal = int(input('Geef een getal: '))
-aantalkeer = 0
+aantalkeer = 1
 totaalgetal = getal
 
 while getal != 0:

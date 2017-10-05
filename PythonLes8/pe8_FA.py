@@ -5,27 +5,16 @@ def inlezen_beginstation(stations):
     while beginstationreis not in stations:
         print('Het opgegeven beginstation komt niet voor in het traject van Schagen-Maastrischt, vul alstublieft een beginstation in vanuit dit traject!')
         beginstationreis = input('Vul het beginstation in van je reis: ')
-        continue
-    else:
-        return (beginstationreis)
+    return beginstationreis
 
 beginstation = inlezen_beginstation(stations)
 
 def inlezen_eindstation(stations, beginstation):
     eindstation = input('Vul het eindstation in van je reis: ')
-    while True:
-        if eindstation in stations:
-            if stations.index(beginstation) >= stations.index(eindstation):
-                print('Het opgegeven eindstation komt eerder voor in het traject dan het opgegeven beginstation, vul alstublieft een geldig eindstation in m.b.t. het opgegeven beginstation!')
+    while eindstation not in stations or stations.index(beginstation) >= stations.index(eindstation):
+                print('Het opgegeven eindstation komt eerder voor in het traject of komt hier helemaal niet in voor, vul alstublieft een geldig eindstation in m.b.t. het opgegeven beginstation!')
                 eindstation = input('Vul het eindstation in van je reis: ')
-                continue
-            else:
-                return(eindstation)
-
-        else:
-            print('Het opgegeven eindstation komt niet voor in het traject van Schaken-Maastricht')
-            eindstation = input('Vul het eindstation in van je reis: ')
-            continue
+    return eindstation
 
 eindstation = inlezen_eindstation(stations, beginstation)
 

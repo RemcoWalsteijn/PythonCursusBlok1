@@ -12,7 +12,6 @@ def monopolyworp():
             print(dob1, '+', dob2, '=', totaal, '(dubbel)')
             dob1 = random.randint(1, 6)
             dob2 = random.randint(1, 6)
-            continue
          else:
             print(dob1, '+', dob2, '=', totaal, '(direct naar de gevangenis)')
             break
